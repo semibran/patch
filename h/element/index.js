@@ -1,4 +1,8 @@
 module.exports = function h(tag, attributes, children) {
+  if (!children && (typeof attributes !== 'object' || Array.isArray(attributes))) {
+    children = attributes
+    attributes = null
+  }
   var element = document.createElement(tag)
   for (var key in attributes) {
     var value = attributes[key]
