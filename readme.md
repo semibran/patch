@@ -25,7 +25,7 @@ Alters the properties of `element` to match those specified by `node`, and retur
 Note that if `element.tagName` and `node.tag` are different, `result` will be a brand new element. This behavior is caused by an interesting property of the `HTMLElement` interface that prevents an element's tag from being changed once it is created. The only workaround is to instantiate a new element to replace the old one, meaning that you may want to reset `element` to the return value of the `patch` function every time it is called if there is any chance of `node.tag` being changed. Otherwise, you run the risk of "jamming" the element in question, reaching a state in which any changes made to `element` are no longer reflected onscreen.
 
 ## related
-* [`semibran/manifest`](semibran/manifest): convert virtual DOM nodes into HTML elements
+* [`semibran/manifest`][semibran/manifest]: convert virtual DOM nodes into HTML elements
 
 [npm package]:       https://npmjs.com/package/@semibran/patch
 [npm badge]:         https://nodei.co/npm/@semibran/patch.png?mini
