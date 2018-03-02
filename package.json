@@ -1,0 +1,10 @@
+{
+  "name": "@semibran/morph",
+  "version": "1.0.0",
+  "description": "simple diff and patch operation for HTML elements",
+  "repository": "semibran/morph",
+  "author": "semibran",
+  "license": "MIT",
+  "main": "lib/morph.js",
+  "keywords": [ "html", "dom", "virtual-dom", "diff", "patch" ]
+}
