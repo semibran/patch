@@ -25,7 +25,7 @@ Alters the properties of `element` to match those specified by `node`, and retur
 Note that if `element.tagName !== node.tag`, `element` and `result` will be different as there is no way to alter an element's tag once it is created. If there is even a slight chance of `node.tag` being changed, you may want to set `element` to the return value of the function just to be safe.
 
 ## related
-[`semibran/manifest`](semibran/manifest): convert virtual DOM nodes into HTML elements
+* [`semibran/manifest`](semibran/manifest): convert virtual DOM nodes into HTML elements
 
 [npm package]:       https://npmjs.com/package/@semibran/patch
 [npm badge]:         https://nodei.co/npm/@semibran/patch.png?mini
