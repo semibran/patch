@@ -22,7 +22,7 @@ Alters the properties of `element` to match those specified by `node`, and retur
 * `element`: the `HTMLElement` to be patched
 * `node`: a virtual node of the structure `{ tag, attributes, children }` against which `element` is compared
 
-Note that if `element.tagName !== node.tag`, `element` and `result` will be different as there is no way to alter an element's tag once it is created. If there is even a slight chance of `node.tag` being changed, you may want to set `element` to the return value of the function just to be safe.
+Note that if `element.tagName` and `node.tag` are different, `result` will be a brand new element. This behavior is caused by an interesting property of the `HTMLElement` interface that prevents an element's tag from being changed once it is created. The only workaround is to instantiate a new element to replace the old one, meaning that you may want to reset `element` to the return value of the `patch` function every time it is called if there is any chance of `node.tag` being changed. Otherwise, you run the risk of "jamming" the element in question, reaching a state in which any changes made to `element` are no longer reflected onscreen.
 
 ## related
 * [`semibran/manifest`](semibran/manifest): convert virtual DOM nodes into HTML elements
