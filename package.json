@@ -1,10 +1,19 @@
 {
-  "name": "@semibran/morph",
+  "name": "@semibran/patch",
   "version": "1.0.0",
-  "description": "simple diff and patch operation for HTML elements",
-  "repository": "semibran/morph",
+  "description": "efficient patch operation for HTML elements",
+  "repository": "semibran/patch",
   "author": "semibran",
   "license": "MIT",
-  "main": "lib/morph.js",
-  "keywords": [ "html", "dom", "virtual-dom", "diff", "patch" ]
+  "main": "lib/patch.js",
+  "keywords": [
+    "patch",
+    "morph",
+    "html",
+    "dom",
+    "virtual-dom"
+  ],
+  "dependencies": {
+    "@semibran/manifest": "^1.0.0"
+  }
 }
