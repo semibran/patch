@@ -16,6 +16,8 @@ patch(element, {
 ## usage
 [![npm badge]][npm package]
 
+To use this module in your project, package your code together using a bundler like [`rollup`][rollup/rollup] together with [`rollup-plugin-node-resolve`][rollup/rollup-plugin-node-resolve].
+
 ### `result = patch(element, node)`
 Alters the properties of `element` to match those specified by `node`, and returns `result`.
 
@@ -27,6 +29,8 @@ Note that if `element.tagName` and `node.tag` are different, `result` will be a 
 ## related
 * [`semibran/manifest`][semibran/manifest]: convert virtual DOM nodes into HTML elements
 
-[npm package]:       https://npmjs.com/package/@semibran/patch
-[npm badge]:         https://nodei.co/npm/@semibran/patch.png?mini
-[semibran/manifest]: https://github.com/semibran/manifest
+[npm package]:                       https://npmjs.com/package/@semibran/patch
+[npm badge]:                         https://nodei.co/npm/@semibran/patch.png?mini
+[rollup/rollup]:                     https://github.com/rollup/rollup
+[rollup/rollup-plugin-node-resolve]: https://github.com/rollup/rollup-plugin-node-resolve
+[semibran/manifest]:                 https://github.com/semibran/manifest
