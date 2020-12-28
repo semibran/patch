@@ -1,9 +1,9 @@
 {
   "name": "@semibran/patch",
-  "version": "1.0.0",
-  "description": "efficient patch operation for HTML elements",
+  "version": "2.0.0",
+  "description": "efficient patch operation for matching HTML elements to vnodes",
   "repository": "semibran/patch",
-  "author": "semibran",
+  "author": "semibran (Brandon Semilla)",
   "license": "MIT",
   "main": "lib/patch.js",
   "keywords": [
@@ -12,8 +12,5 @@
     "html",
     "dom",
     "virtual-dom"
-  ],
-  "dependencies": {
-    "@semibran/manifest": "^1.0.0"
-  }
+  ]
 }
